@@ -1,0 +1,31 @@
+@import './variable';
+.home__page__style{
+    .search__options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:50px 160px 50px 0;
+        & input{
+            height: 55px;
+            max-width: 100%;
+            width: 450px;
+            border: 2px solid $colorSecondary;
+            outline: 0;
+            padding: 1rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            position: relative;
+            left: 160px;
+        }
+    }
+    .meals__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .no__meals__found{
+        text-align: center;
+        font-size: 50px;
+    }
+}

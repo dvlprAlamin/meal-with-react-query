@@ -1,0 +1,36 @@
+@import './../variable';
+.wave-effect{
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    background-color: $colorSecondary;
+    display: inline-block;
+    padding: 15px 50px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 #888888;
+    overflow: hidden;
+    font-size: 1.2rem;
+    position: relative;
+    & span{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        pointer-events: none;
+        animation: wave .5s linear infinite;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+}
+@keyframes wave {
+    0%{
+        width: 0;
+        height: 0;
+        opacity: .5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+
+}
