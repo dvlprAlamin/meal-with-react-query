@@ -15,7 +15,7 @@ const Home = () => {
     const history = useHistory();
     const fetcher = (search) => axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?f=${search}`).then(res => res.data)
 
-
+    // [`/search.php?f=${search}`, search]
     const { data, isLoading, isSuccess } = useQuery(['meals', search], () => fetcher(search), {
         enabled: !!search
     });

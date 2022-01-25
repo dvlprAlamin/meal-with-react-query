@@ -28,6 +28,8 @@ const MealDetails = () => {
                 <div className="container">
 
                     <Link to={`/meals${search}`}><CustomButton>Go Back</CustomButton></Link>
+                    <Link to={`/cached${search}`}><CustomButton>Cache Data</CustomButton></Link>
+                    <Link to={`/posts`}><CustomButton>Posts</CustomButton></Link>
                     <div className="meal__details">
                         <div className="meal__img">
                             <img src={strMealThumb} alt="" />
