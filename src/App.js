@@ -15,7 +15,6 @@ const App = () => {
         <Route path={'/cached'} component={CachedData} />
         <Route path={'/posts'} component={Posts} />
         <Route path={'*'} component={NotFound} />
-
       </Switch>
     </Router>
   );
